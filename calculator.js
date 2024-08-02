@@ -24,11 +24,13 @@ document.querySelector("#allClear").addEventListener("click",clearAll)
 // Add KeyboardListener
 document.addEventListener(
     "keydown",(e)=>{
-        e.preventDefault()
+        
         if(allNums.includes(e.key)) addToCurrNum(e.key)
         else if(e.key =="Backspace" || e.key=="Delete") delCurrNum()
         else if (allOperands.includes(e.key)) operate(e.key)
-        else if (e.key =="Enter") equal()
+        else if (e.key =="Enter") {
+            e.preventDefault()
+            equal()}
     }       
 )
 
