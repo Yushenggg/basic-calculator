@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+html body{
+    background-color: #CFCCD6;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Chakra Petch",sans-serif;
+}
+
+#calculator{
+    background-color: #233252;
+    border-radius: 24px;
+    width: 50vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#calculator #screen{
+    background-color: #556076;
+    height: 15%;
+    width: 90%;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: right;
+    container-type: inline-size;
+}
+#calculator #screen #history{
+    flex: 3;
+    font-size: 4cqw;
+    padding-right: 4cqw;
+}
+#calculator #screen #curNum{
+    flex: 9;
+    font-size: 12cqw;
+    padding-right: 4cqw;
+}
+#calculator #screen span{
+    flex:1;
+}
+
+#calculator #keypad{
+    
+    height: 75%;
+    width: 90%;
+    border-radius: 24px;
+    display: flex;
+}
+#calculator #keypad .col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 10px;
+
+}
+button{
+    all:unset;
+    text-align: center;
+    background-color: #CFCCD6;
+    border-radius: 12px;
+    border: #233252 5px solid;
+    font-size: 4cqb;
+    font-weight: 700;
+    flex:1;
+    
+}
+button:hover{
+    background-color: #556076;
+}
+button:active{
+    background-color: #2c3446;
+}
+
+.doubleBtn{
+    flex:2;
+    padding: 5px;
+    background-color: #DE3C4B;
+
+}
+.function{
+    background-color: #D17A22;
+}
+.operand{
+background-color: #087E8B;
+}
